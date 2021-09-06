@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(206, 179, 128);
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  height: 100%;
+  margin: 30vh auto;
+}
+
+.title {
+  color: white;
+}
+
+.quote-box {
+  background-color: white;
+  padding: 2em;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  max-width: 1300px;
+  margin: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+}
+
+#text {
+  font-size: clamp(1em, 1.8em, 2.4em);
+  margin-bottom: 1em;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.fa-quote-left {
+  margin-right: auto;
+  font-size: clamp(2em, 2.8em, 3.4em);
+}
+
+.fa-quote-right {
+  margin-left: auto;
+  font-size: clamp(2em, 2.8em, 3.4em);
+}
+
+#author {
+  font-size: clamp(0.8em, 1.4em, 2em);
+  color: rgb(49, 51, 53);
+  text-transform: uppercase;
+  font-style: italic;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em;
+}
+.btn {
+  height: auto;
+  width: auto;
+  font-size: clamp(1em, 2em, 2.5em);
+  padding: 0.5em;
+  border-radius: 15px;
+  border: none;
+  float: right;
+  margin: 0.5em 1em 0 -20px;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.fb {
+  color: white;
+  background-color: rgb(66, 103, 178);
+}
+.tw {
+  color: white;
+  background-color: rgb(29, 161, 242);
+}
