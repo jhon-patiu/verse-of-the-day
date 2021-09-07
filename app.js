@@ -9,7 +9,7 @@ const quoteLeft = document.querySelector(".fa-quote-left");
 const quoteRight = document.querySelector(".fa-quote-right");
 
 // bible api url
-const url = "http://quotes.rest/bible/vod.json";
+const url = "https://quotes.rest/bible/vod.json";
 
 // colors array for background
 const colors = [
