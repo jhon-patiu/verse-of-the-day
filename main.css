@@ -30,6 +30,12 @@ body {
   font-family: "Homemade Apple", cursive;
 }
 
+@media (max-width: 500px) {
+  .title {
+    justify-content: center;
+  }
+}
+
 .quote-box {
   background-color: white;
   padding: 2em;
@@ -53,13 +59,13 @@ body {
 }
 .fa-quote-left {
   margin: 0 auto 0.5em 0;
-  font-size: clamp(2em, 2.8em, 3.4em);
+  font-size: clamp(1.5em, 2.8em, 3.4em);
   transition: all 100ms ease-in-out;
 }
 
 .fa-quote-right {
   margin-left: auto;
-  font-size: clamp(2em, 2.8em, 3.4em);
+  font-size: clamp(1.5em, 2.8em, 3.4em);
   transition: all 100ms ease-in-out;
 }
 
@@ -112,6 +118,7 @@ body {
   color: white;
   background-color: rgb(247, 109, 132);
   font-size: 1.1em;
+  transition: all 300ms ease-out;
 }
 
 .random-color {
