@@ -8,9 +8,6 @@ const changeBg = document.querySelector(".change-bg");
 const quoteLeft = document.querySelector(".fa-quote-left");
 const quoteRight = document.querySelector(".fa-quote-right");
 
-// bible api url
-const url = "https://quotes.rest/bible/vod.json";
-
 // colors array for background
 const colors = [
   "#DE3163",
@@ -36,7 +33,7 @@ const colors = [
 
 document.addEventListener("DOMContentLoaded", () => {
   // fetch Bible API
-  fetch(url)
+  fetch(urls.BIBLE_URL)
     .then((response) => response.json())
     .then((data) => {
       votd.innerText = data.contents.verse;
