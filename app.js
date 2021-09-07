@@ -59,7 +59,6 @@ changeBg.addEventListener("click", changeBackground);
 
 function changeBackground() {
   let random = Math.floor(Math.random() * colors.length);
-  console.log(random);
   document.body.style.background = colors[random];
   votd.style.color = colors[random];
   quoteLeft.style.color = colors[random];
