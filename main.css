@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
 
 *,
 *::before,
@@ -6,21 +7,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 900ms ease-in-out;
 }
 
 body {
-  background-color: rgb(206, 179, 128);
+  background-color: rgb(228, 206, 167);
   font-family: "Nunito", sans-serif;
 }
 
 .container {
   max-width: 1300px;
   height: 100%;
-  margin: 30vh auto;
+  margin: 15vh auto;
 }
 
 .title {
   color: white;
+  margin: 0 auto 0.25em auto;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  font-family: "Homemade Apple", cursive;
 }
 
 .quote-box {
@@ -29,13 +36,13 @@ body {
   border-radius: 5px;
   height: auto;
   width: auto;
-  max-width: 1300px;
-  margin: 0 1em;
+  max-width: 900px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  word-break: break-all;
+  word-break: normal;
 }
 
 #text {
@@ -45,13 +52,15 @@ body {
   font-weight: 600;
 }
 .fa-quote-left {
-  margin-right: auto;
+  margin: 0 auto 0.5em 0;
   font-size: clamp(2em, 2.8em, 3.4em);
+  transition: all 100ms ease-in-out;
 }
 
 .fa-quote-right {
   margin-left: auto;
   font-size: clamp(2em, 2.8em, 3.4em);
+  transition: all 100ms ease-in-out;
 }
 
 #author {
@@ -64,24 +73,47 @@ body {
   justify-content: flex-end;
   margin: 1em;
 }
+
+.btn-div {
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-end;
+  width: auto;
+  max-width: 900px;
+}
 .btn {
   height: auto;
   width: auto;
-  font-size: clamp(1em, 2em, 2.5em);
   padding: 0.5em;
-  border-radius: 15px;
+  border-radius: 5px;
   border: none;
-  float: right;
-  margin: 0.5em 1em 0 -20px;
+  margin: 0.5em 1em 0 -10px;
   cursor: pointer;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
-.fb {
-  color: white;
-  background-color: rgb(66, 103, 178);
+.btn:hover {
+  transform: scale(1.1);
 }
-.tw {
+
+.fb-share-button {
+  color: white;
+  background-color: rgb(39, 109, 250);
+  font-size: 1em;
+}
+
+#tweet {
   color: white;
   background-color: rgb(29, 161, 242);
+  font-size: 1.1em;
+}
+
+#palette {
+  color: white;
+  background-color: rgb(247, 109, 132);
+  font-size: 1.1em;
+}
+
+.random-color {
+  color: wheat;
 }
