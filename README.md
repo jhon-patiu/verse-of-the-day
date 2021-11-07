@@ -1,7 +1,8 @@
-# verse-of-the-day
+# Verse of the Day app
 
-simple bible verse of the day with background color changer and facebook twitter share buttons
+Dynamically changing bible verse every day with background color changer and facebook twitter share buttons
 
+# LIVE:
 deployed from Netlify https://jhonpatiu-votd.netlify.app/
 
-**currently not working on github
+
